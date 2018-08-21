@@ -1,0 +1,54 @@
+/////////////////////////
+//                     //
+//     - MIXINS -      //
+//                     //
+/////////////////////////
+
+@mixin gridPadding(){
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	width: 95%;
+	position: relative;
+	@media screen and (max-width: 680px) { width: 90%; }
+}
+
+@mixin word-wrap() {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-word;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+@mixin btn($lineheight, $padding, $radius, $btnColor, $BG, $hoverColor, $hoverBG, $border: transparent) {
+	display: inline-block;
+	padding: 0 $padding;
+	line-height: $lineheight;
+	color: $btnColor;
+	border: 2px solid $btnColor;
+	border-radius: $radius;
+	transition: $dTransition;
+	background: $BG;
+	white-space: nowrap;
+	&:hover {
+		color: $hoverColor;
+		background: $hoverBG;
+		border: 2px solid $border;
+	}
+}
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 680px) {
+
+}
+
+@media screen and (max-width: 580px) {
+
+}

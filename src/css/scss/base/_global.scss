@@ -1,0 +1,102 @@
+/////////////////////////
+//                     //
+//    - CONTENT -      //
+//                     //
+/////////////////////////
+
+html, body { background: $solidBlack; }
+html {
+	display: flex;
+	width: 100%;
+}
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+p {
+	font-size: 18px;
+	@media screen and (max-width: 680px) { font-size: 16px; }
+}
+.pd-tp { display: none; }
+.template {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.page .template__wrapper { width: 100%; }
+.template__wrapper { flex-grow: 1; }
+iframe[name="google_conversion_frame"] { display: none !important;}
+input[type=text] { appearance: none; }
+label { display: block; }
+.shopify-challenge__button {
+	height: 50px;
+	padding: 0 30px;
+	font-size: 16px;
+	line-height: 46px;
+	color: $solidWhite;
+	display: block;
+	font-weight: 400;
+	padding: 0 25px;
+	background: $red;
+	border-radius: 40px;
+	border: 2px solid $red;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+	margin-top: 40px !important;
+	font-family: $proxNovaReg;
+	&:hover {
+		background: transparent;
+		color: $red;
+	}
+}
+.shopify-challenge__message {
+	color: $solidBlack;
+	font-size: 22px;
+	font-family: $proxNovaReg;
+	margin-bottom: 30px;
+}
+.shopify-challenge__container {
+	max-width: 500px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+}
+a,
+input,
+textarea,
+select,
+button { font-family: $proxNovaReg; }
+a, button {
+	transition: $dTransition;
+	color: #000;
+}
+.main-content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+// @-moz-document url-prefix() {
+// 	// Firefox doesn't respect max-width in certain situations
+// 	img { width: 100%; max-width: -moz-max-content; }
+// }
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 680px) {
+
+}
+
+@media screen and (max-width: 580px) {
+
+}

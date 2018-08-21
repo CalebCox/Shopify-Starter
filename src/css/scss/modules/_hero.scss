@@ -1,0 +1,66 @@
+/////////////////////////
+//                     //
+//    - CONTENT -      //
+//                     //
+/////////////////////////
+
+.hero {
+	width: 100%;
+	position: relative;
+	background: $footerBG;
+	color: $footer;
+	overflow: hidden;
+	& a { color: $solidWhite; }
+	&__wrapper {
+		@include gridPadding();
+		height: 100%;
+		padding: 65px 0;
+		max-height: 920px;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	&__image {
+		width: 90vw;
+		max-height: 600px;
+		max-width: 1050px;
+		margin: 0 auto 10px auto;
+	}
+	&__info {
+		width: 100%;
+		max-width: 860px;
+		margin: 0 auto;
+	}
+	&__title { margin-bottom: 15px; }
+	&__body { margin-bottom: 35px; }
+	& a {
+		@include btn(60px, 30px, 34px, $solidWhite, transparent, $red, $solidWhite, $solidWhite);
+		font-size: 26px;
+		margin-left: auto;
+		font-family: $proxNovaBold;
+	}
+}
+
+/////////////////////////
+//                     //
+//   - BREAKPOINTS -   //
+//                     //
+/////////////////////////
+
+@media screen and (max-width: 960px) {
+	.hero {
+		&__wrapper { padding: 55px 0; }
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.hero {
+		order: -1;
+		// &__image { width: 100%; }
+	}
+}
+
+@media screen and (max-width: 580px) {
+
+}
